@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Information</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+      }
+      input,
+      label,
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+      }
+      label {
+        padding-left: 0;
+      }
+      textarea {
+        min-width: 100%;
+      }
+      .red {
+        color: red;
+        font-size: 0.8rem;
+        padding: 0;
+      }
+      input:last-child {
+        width: auto;
+        display: inline;
+        padding: 0.5rem 1rem;
+        background: rgb(51, 153, 255);
+        color: white;
+        outline: none;
+        border: none;
+        margin-top: 1rem;
+      }
+      input:last-child:hover {
+        background: rgb(0, 102, 204);
+      }
+      #chk {
+        display: inline;
+        border: 1px solid;
+        width: auto;
+        margin-top: 1rem;
+      }
+      .inline {
+        display: inline;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Guess Information</h1>
+      <form action="">
+        <label>Name: </label>
+        <input type="text" name="" id="" placeholder="Enter Full Name" />
+        <label for="" class="red">Please fill out this field</label>
+
+        <label>Email: </label>
+        <input type="text" name="" id="" placeholder="Enter Email" />
+        <label for="" class="red">Please fill out this field</label>
+
+        <label>Comment: </label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <label for="" class="red">Please fill out this field</label>
+
+        <input type="checkbox" name="" id="chk" />
+        <label class="inline" for="chk"
+          >I agree to the terms and conditions</label
+        >
+        <label for="" class="red">Check checkbox to continue</label>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
